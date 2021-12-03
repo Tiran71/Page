@@ -1,0 +1,14 @@
+{% extends 'main/temp.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block head %}Страница новостей{% endblock %}
+
+{% block content %}
+<div align="center">
+   <h3>{{ object.title }}</h3>
+   <h5>{{ object.date }}</h5>
+    <p>{{ object.text }}</p>
+    <a href="{% url 'delete' object.id %}"><button type="submit">Удалить</button></a>    
+</div>    
+{% endblock %}

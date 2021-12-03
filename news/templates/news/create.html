@@ -1,0 +1,18 @@
+{% extends 'main/temp.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block head %}Страница новостей{% endblock %}
+
+{% block content %}
+<div>
+  <form method="post">
+    {% csrf_token %} 
+    {{ forma.title }}<br> <br>
+    {{ forma.text }}  <br> <br>
+    {{ forma.date }} <br> <br> 
+    <span>{{ error }}</span> 
+    <button  type="submit">Принять</button>    
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'main/temp.html' %}
+
+{% block title %}update{% endblock %}
+
+{% block head %}Страница update{% endblock %}
+
+{% block content %}
+<div><form method="post">
+
+    <span>{{ error }}</span> 
+    <button btn btn-warning type="submit">Принять</button>    
+    </form>
+</div>
+{% endblock %}

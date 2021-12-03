@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(83, 82, 82);
+    color: white;
+      
+}
+aside {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 7px;
+    float: left;
+    background-color: rgb(51, 49, 49);
+    color: white;
+    height: 100%;
+    width: 180px;
+    margin-left: 10px;    
+    padding-bottom: 1000px; 
+    
+}
+
+aside p {
+    margin-top: 10%;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    margin-left: 50px;
+    text-decoration: none; 
+}
+
+div {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 7px;
+    float: left;
+    margin-left: 100px;
+    background-color: rgb(151, 142, 57);
+    float: 50%;
+    width: 500px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5%;
+}

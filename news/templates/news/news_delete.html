@@ -1,0 +1,13 @@
+{% extends 'main/temp.html' %}
+
+{% block title %}Удаление{% endblock %}
+
+{% block head %}Удалить статью{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %} 
+    
+    <button  type="submit">Удалить</button>    
+  </form>
+{% endblock %}

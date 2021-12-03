@@ -1,0 +1,21 @@
+{% extends 'main/temp.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block head %}Страница новостей{% endblock %}
+
+{% block content %}
+<h5 align="center">На этой странице будут добавляться новости
+<a href="create" ><button >Добавить...</button></a>
+</h5> 
+ {% for cnt in object_list %}
+  <div align="center" back="blue"><h3>{{ cnt.title }}</h3>
+  <p >{{ cnt.date }}</p>
+   <h5>{{ cnt.text }}</h5>
+  <a href="{% url 'detail' cnt.id %}">Далее</a>
+</div>   
+ {% endfor %} 
+{% endblock %}  
+ <br>  <br> 
+
+
